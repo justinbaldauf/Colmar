@@ -88,4 +88,56 @@ header .mobile {
   header .mobile a {
     padding-left: 0;
     /* vertical-align: bottom; */
+  }
+}
+
+/* main section  */
+
+main {
+  top: 4rem; /* offset for fixed header. */
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.landing-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: Grey;
+}
+
+.landing-page img {
+  width: 65%;
+  height: auto;
+  padding-right: 1.5rem;
+  display: block;
+}
+
+.flex-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 2rem 1.5rem;
+  border: 2px red solid;
+}
+
+.flex-container-column {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+}
+
+.button {
+  background-color: DarkGrey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button p {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
