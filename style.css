@@ -1,0 +1,88 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+/* header section  */
+
+header {
+  position: fixed;
+  z-index: 5;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px black solid;
+}
+
+header .content {
+  width: 100%;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4A4A4A;
+  border: 1px blue solid;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  border: 1px black dotted;
+}
+
+header .logo img {
+  height: 3.25rem;
+  padding-right: .3rem;
+}
+
+.logo-name span {
+  height: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px red solid;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+  header .desktop {
+    display: none;
+  }
+
+  header .content {
+    margin: 0;
+  }
+
+  /* .mobile must be displayed because the default is display: none */
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  nav li {
+    padding: 0;
+  }
+
+  /* nav ul li img {
+    vertical-align: bottom;
+    height: 2rem;
+  } */
+}
