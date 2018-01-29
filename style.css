@@ -99,29 +99,35 @@ main {
   background-color: #f2f2f2;
 }
 
-.big-flex-wrap {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
+.landing-page {
+  /* width: 100%; */
   background-color: Grey;
+  border: 2px black solid;
 }
 
-.landing-page img {
-  width: 60%;
-  height: auto;
-  padding: 2rem 1.5rem;
+.image-and-text-box {
+  display: flex;
+  align-items: center;
+  border: 1px black dotted;
 }
 
 .flex-wrap-col {
   display: flex;
   flex-direction: column;
+  border: 1px blue dotted;
+}
+
+.landing-page img {
+  width: 60%;
+  height: auto;
+  display: block;
+  padding: 2rem 1.5rem;
 }
 
 .landing-page .flex-wrap-col {
-  width: 22%;
-  margin-left: 1rem;
-  border: 1px red solid;
+  width: 40%;
+  margin-left: 0.5rem;
+  margin-right: 8rem;
 }
 
 .landing-page h3 {
@@ -168,18 +174,23 @@ main {
 /* second section */
 
 .second-section {
+  /* width: 100%; */
+  display: flex;
+  padding: 2rem 0;
   background-color: white;
+  border: 2px black solid;
 }
 
-.first-col.flex-wrap-col {
+.second-section .first-col {
   width: 60%;
-  margin: 2rem 1.5rem;
-  border: 2px black solid;
+  padding: 0 1.5rem;
+  border: 2px red solid;
 }
 
 .second-section .first-col img {
   width: 100%;
   height: auto;
+  display: block;
   padding-bottom: 2rem;
 }
 
@@ -191,4 +202,66 @@ main {
 .second-section .first-col h5{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
+}
+
+.second-col {
+  width: 40%;
+  border: 2px blue solid;
+}
+
+.second-col .image-and-text-box img {
+  width: 35%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+#orientation img {
+  padding-top: 0;
+}
+
+.second-section .second-col .mobile {
+  display: none;
+}
+
+/* second section - for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+.second-section .first-col {
+  display: none;
+  }
+
+.second-section .second-col .desktop {
+  display: none;
+  }
+
+.second-section .second-col .mobile {
+  width: 100%;
+  display: block;
+  }
+
+.second-section {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  }
+
+.second-col {
+  width: 100%;
+  }
+
+.second-col .image-and-text-box {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+.second-col .image-and-text-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+  }
+
+.second-col .flex-wrap-col {
+  margin-left: 1rem;
+  }
 }
