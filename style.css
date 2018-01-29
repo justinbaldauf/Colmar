@@ -108,25 +108,25 @@ main {
 }
 
 .landing-page img {
-  width: 65%;
+  width: 60%;
   height: auto;
-  padding-right: 1.5rem;
-  display: block;
-}
-
-.flex-container {
-  width: auto;
-  display: flex;
-  align-items: center;
-  margin: 2rem 1.5rem;
-  border: 2px red solid;
+  padding: 2rem 1.5rem;
+  /* display: block; */
 }
 
 .flex-container-column {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   border: 1px black solid;
+}
+
+.landing-page .flex-container-column {
+  margin-left: 1rem;
+}
+
+main h3 {
+  padding: 2rem 0;
 }
 
 .button {
