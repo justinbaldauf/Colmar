@@ -111,21 +111,20 @@ main {
   width: 60%;
   height: auto;
   padding: 2rem 1.5rem;
-  /* display: block; */
 }
 
-.flex-container-column {
+.landing-page .flex-container-column {
   width: 22%;
   display: flex;
   flex-direction: column;
-  border: 1px black solid;
+  border: 1px red solid;
 }
 
 .landing-page .flex-container-column {
   margin-left: 1rem;
 }
 
-main h3 {
+.landing-page h3 {
   padding: 2rem 0;
 }
 
@@ -141,3 +140,29 @@ main h3 {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
+
+/* main section - for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+.landing-page {
+  flex-direction: column;
+  }
+
+.landing-page img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  }
+
+.landing-page .flex-container-column {
+  width: auto;
+  margin: 2rem 1rem;
+  }
+
+.landing-page h3 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  }
+}
+
+/* second section */
