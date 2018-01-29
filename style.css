@@ -113,10 +113,13 @@ main {
   padding: 2rem 1.5rem;
 }
 
-.landing-page .flex-container-column {
-  width: 22%;
+.flex-container-column {
   display: flex;
   flex-direction: column;
+}
+
+.landing-page .flex-container-column {
+  width: 22%;
   border: 1px red solid;
 }
 
