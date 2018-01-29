@@ -99,7 +99,7 @@ main {
   background-color: #f2f2f2;
 }
 
-.landing-page {
+.big-flex-wrap {
   width: 100%;
   height: auto;
   display: flex;
@@ -113,18 +113,15 @@ main {
   padding: 2rem 1.5rem;
 }
 
-.flex-container-column {
+.flex-wrap-col {
   display: flex;
   flex-direction: column;
 }
 
-.landing-page .flex-container-column {
+.landing-page .flex-wrap-col {
   width: 22%;
-  border: 1px red solid;
-}
-
-.landing-page .flex-container-column {
   margin-left: 1rem;
+  border: 1px red solid;
 }
 
 .landing-page h3 {
@@ -157,7 +154,7 @@ main {
   padding: 0;
   }
 
-.landing-page .flex-container-column {
+.landing-page .flex-wrap-col {
   width: auto;
   margin: 2rem 1rem;
   }
@@ -169,3 +166,29 @@ main {
 }
 
 /* second section */
+
+.second-section {
+  background-color: white;
+}
+
+.first-col.flex-wrap-col {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  border: 2px black solid;
+}
+
+.second-section .first-col img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.second-section .first-col .flex-wrap-col {
+  margin-right: 3rem;
+  border: 1px blue dotted;
+}
+
+.second-section .first-col h5{
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
