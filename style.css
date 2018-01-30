@@ -3,6 +3,18 @@ html {
   font-size: 16px;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: .9rem;
+}
+
 /* header section  */
 
 header {
@@ -99,10 +111,13 @@ main {
   background-color: #f2f2f2;
 }
 
-.landing-page {
+.section {
   width: auto;
+  padding: 2rem 1.5rem;
+}
+
+.landing-page {
   background-color: Grey;
-  /* border: 2px black solid; */
 }
 
 .image-and-text-box {
@@ -117,23 +132,27 @@ main {
   border: 1px red dotted;
 }
 
+.second-col {
+  width: 40%;
+  border: 2px red solid;
+}
+
 .landing-page .image-container {
   width: 60%;
-  /* height: auto; */
-  padding: 2rem 1.5rem;
-  border: 3px blue solid;
+  height: auto;
+  border: 2px blue solid;
   }
 
-.landing-page .image-container img {
-  max-width: 100%;
+.landing-page img {
+  width: 100%;
   height: auto;
   display: block;
   }
 
 .landing-page .flex-wrap-col {
-  width: 40%;
-  padding-left: 0.5rem;
-  /* padding-right: 8rem; */
+  width: auto;
+  margin-left: 2rem;
+  margin-right: 4rem;
 }
 
 .landing-page h3 {
@@ -289,8 +308,12 @@ main {
   border: 1px red solid;
 }
 
+.first.row-of-boxes {
+  margin-bottom: 2rem;
+}
+
 .vertical-image-and-text-box {
-  width: 32%;
+  width: 31.50%;
   display: flex;
   flex-direction: column;
 }
@@ -303,10 +326,12 @@ main {
 
 .third-section .flex-wrap-col {
   background-color: white;
+  width: auto;
+  height: 6.75rem;
   border: 1px black dashed;
   padding-left: 1rem;
   padding-top: 1rem;
-  padding-right: 3rem;
+  padding-right: 4rem;
   padding-bottom: 1.5rem;
 }
 
@@ -317,8 +342,30 @@ main {
 .vertical-image-and-text-box h5 {
   padding-top: .5rem;
 }
-/*
-#computer-art {
-  padding-left: 2rem;
-  padding-right: 2rem;
-} */
+
+.third-section .mobile {
+  display: none;
+}
+
+.third-section .mobile .container {
+  width: 100%;
+  padding: 1rem;
+  background-color: LightGrey;
+}
+
+/* main section - for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+  .third-section {
+    padding: 2rem 1rem;
+    background-color: white;
+  }
+
+  .third-section .desktop {
+    display: none;
+  }
+
+  .third-section .mobile {
+    display: block;
+  }
+}
