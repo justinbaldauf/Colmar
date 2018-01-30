@@ -111,6 +111,12 @@ main {
   background-color: #f2f2f2;
 }
 
+section {
+  width: auto;
+  padding: 2rem 1.5rem;
+  background-color: white;
+}
+
 .section {
   width: auto;
   padding: 2rem 1.5rem;
@@ -375,4 +381,50 @@ main {
   #marketing {
     margin-bottom: 0;
   }
+}
+
+/* Thesis section */
+
+section .thesis {
+  border: 1px red solid;
+}
+
+.thesis h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.flex-wrap-row {
+  display: flex;
+  border: 2px red dotted;
+}
+
+.first {
+  width: 60%;
+}
+
+.second {
+  width: 40%;
+}
+
+.thesis video {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.text-wrap {
+  width: auto;
+  padding-right: 2rem;
+  border: 1px black dotted;
+}
+
+.thesis .text-wrap h3{
+  padding-bottom: 1rem;
+}
+
+.image-and-text-box img {
+  width: 35%;
+  padding: 1rem;
 }
