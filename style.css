@@ -285,11 +285,12 @@ main {
 .row-of-boxes {
   width: auto;
   display: flex;
+  justify-content: space-between;
   border: 1px red solid;
 }
 
 .vertical-image-and-text-box {
-  width: 33%;
+  width: 32%;
   display: flex;
   flex-direction: column;
 }
@@ -305,7 +306,7 @@ main {
   border: 1px black dashed;
   padding-left: 1rem;
   padding-top: 1rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
   padding-bottom: 1.5rem;
 }
 
@@ -316,8 +317,8 @@ main {
 .vertical-image-and-text-box h5 {
   padding-top: .5rem;
 }
-
+/*
 #computer-art {
   padding-left: 2rem;
   padding-right: 2rem;
-}
+} */
