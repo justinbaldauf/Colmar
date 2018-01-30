@@ -345,11 +345,14 @@ main {
 
 .third-section .mobile {
   display: none;
+  width: 100%;
+  border: 1px black solid;
 }
 
 .third-section .mobile .container {
-  width: 100%;
+  width: auto;
   padding: 1rem;
+  margin-bottom: .5rem;
   background-color: LightGrey;
 }
 
@@ -367,5 +370,9 @@ main {
 
   .third-section .mobile {
     display: block;
+  }
+
+  #marketing {
+    margin-bottom: 0;
   }
 }
