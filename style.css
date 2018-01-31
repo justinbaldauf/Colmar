@@ -411,7 +411,7 @@ section .thesis {
   width: 100%;
   height: auto;
   display: block;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-wrap {
@@ -427,4 +427,24 @@ section .thesis {
 .image-and-text-box img {
   width: 35%;
   padding: 1rem;
+}
+
+/* main section - for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+  .thesis .desktop {
+    display: none;
+  }
+
+  .thesis .mobile {
+    display: block;
+  }
+
+  .thesis h2 {
+    padding-bottom: 1rem;
+  }
+
+  .thesis .first {
+    width: 100%;
+  }
 }
