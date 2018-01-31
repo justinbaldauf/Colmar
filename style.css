@@ -29,13 +29,15 @@ header {
 }
 
 header .content {
+  width: 100%;
   margin: 0 1.5rem;
-  color: #4A4A4A;
+  color: black;
   border: 1px blue solid;
 }
 
-header .desktop {
-  border: 2px red dotted;
+.logo-and-text {
+  display: flex;
+  align-items: center;
 }
 
 .flex-between {
@@ -43,27 +45,22 @@ header .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px red dotted;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px red dotted;
+  border: 1px red solid;
 }
 
 nav a {
   padding-left: 1rem;
 }
 
-img.logo {
+header .desktop img.logo {
   height: 3rem;
   padding-right: .3rem;
-}
-
-.desktop span {
-  height: 2rem;
 }
 
 header .mobile {
@@ -81,18 +78,14 @@ header .mobile {
     margin: .5rem;
   }
 
-  img.logo {
+  header .mobile img.logo {
     height: 2.5rem;
     padding-right: 0;
   }
 
   header .mobile {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 6.5rem;
     padding-top: .25rem;
-    border: 1px red dotted;
   }
 }
 
