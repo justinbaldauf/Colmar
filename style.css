@@ -114,9 +114,11 @@ main {
 /* CSS selectors used across multiple sections of the page */
 
 section {
-  width: 100%;
+  width: auto;
   height: auto;
-  padding: 2rem 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
 .first-col {
@@ -134,13 +136,6 @@ section {
   border: 1px red dotted;
 }
 
-.flex-wrap-col {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  border: 1px red dotted;
-}
-
 .image-and-text-box {
   display: flex;
   align-items: center;
@@ -149,28 +144,40 @@ section {
 
 .text-wrap {
   width: auto;
-  padding-right: 2rem;
-  border: 1px black dotted;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  border: 1px red dotted;
 }
 
-/* landing page section */
-
-.landing-page {
-  background-color: Grey;
-}
-
-.landing-page .first-col img {
+.standard-image-format {
   width: 100%;
   height: auto;
   display: block;
-  }
+}
 
-.landing-page .flex-wrap-col {
-  margin-left: 2rem;
+.small-image-format {
+  width: 35%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+/* first section (landing page) */
+
+.first-section {
+  background-color: Grey;
+}
+
+.first-section .second-col {
+  margin-left: 1.5rem;
+}
+
+.first-section .text-wrap {
   margin-right: 10rem;
 }
 
-.landing-page h3 {
+.first-section h3 {
   padding: 2rem 0;
 }
 
@@ -187,56 +194,53 @@ section {
   padding-bottom: .5rem;
 }
 
-/* landing page section - for screen width of 520px or smaller: */
+/* first section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
-section.landing-page {
+section.first-section {
   padding: 0rem;
 }
 
-.landing-page {
+.first-section {
   flex-direction: column;
   }
 
-.landing-page .first-col {
+.first-section .first-col {
   width: 100%;
   }
 
-.landing-page .flex-wrap-col {
+.first-section .second-col {
+  margin-left: 0;
+  }
+
+.first-section .text-wrap {
   margin: 2rem 1rem;
 }
 
-.landing-page h3 {
+.first-section h3 {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   }
 }
 
-/* second section */
+/* Second section ("keep practicing") */
 
 .second-section {
-  width: auto;
   display: flex;
-  padding: 2rem 0;
   background-color: white;
-  /* border: 2px black solid; */
+  border: 2px red solid;
 }
 
-.second-section .first-col {
-  width: 60%;
-  /* height: auto; */
-  padding: 0 1.5rem;
-  border: 3px red solid;
+.second-section .first-col, .second-section .second-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .second-section .first-col img {
-  width: 100%;
-  height: auto;
-  display: block;
   padding-bottom: 2rem;
 }
 
-.second-section .first-col .flex-wrap-col {
+.second-section .first-col .text-wrap {
   margin-right: 3rem;
 }
 
@@ -245,19 +249,11 @@ section.landing-page {
   padding-bottom: 2rem;
 }
 
-/* .second-col {
-  width: 40%;
-  border: 2px black solid;
-} */
-
-.second-col .image-and-text-box img {
-  width: 35%;
-  height: auto;
-  display: block;
-  padding: 1rem;
+.second-section .second-col {
+  margin-left: 1.5rem;
 }
 
-#orientation img {
+#orientation {
   padding-top: 0;
 }
 
@@ -265,24 +261,23 @@ section.landing-page {
   display: none;
 }
 
-/* second section - for screen width of 520px or smaller: */
+/* Second section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
-.second-section .first-col {
-  display: none;
-  }
-
-.second-section .second-col .desktop {
+.second-section .desktop {
   display: none;
   }
 
 .second-section .second-col .mobile {
-  width: 100%;
   display: block;
   }
 
 .second-section {
   padding: 1rem;
+  }
+
+.second-section .second-col {
+  margin-left: 0;
   margin-bottom: 1rem;
   }
 
@@ -296,25 +291,26 @@ section.landing-page {
   }
 
 .second-col .image-and-text-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding: 0;
+  padding: 2rem 0;
   }
 
-.second-col .flex-wrap-col {
+#orientation {
+  padding-top: 0;
+  }
+
+.second-col .text-wrap {
   margin-left: 1rem;
   }
 }
 
-/* Third section  */
+/* Third section ("Start learning")  */
 
 .third-section {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 4.5rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
   background-color: LightGrey;
   border: 2px black solid;
 }
@@ -340,17 +336,12 @@ section.landing-page {
   flex-direction: column;
 }
 
-.vertical-image-and-text-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.third-section .flex-wrap-col {
+.third-section .text-wrap {
   background-color: white;
   width: auto;
   height: 6.75rem;
   border: 1px black dashed;
+  margin-right: 0;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-right: 4rem;
@@ -378,12 +369,16 @@ section.landing-page {
   background-color: LightGrey;
 }
 
-/* main section - for screen width of 520px or smaller: */
+/* Third section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
   .third-section {
     padding: 2rem 1rem;
     background-color: white;
+  }
+
+  .third-section h2 {
+    padding-bottom: 1rem;
   }
 
   .third-section .desktop {
@@ -399,54 +394,61 @@ section.landing-page {
   }
 }
 
-/* Thesis section */
+/* Fourth section ("Thesis") */
 
-section .thesis {
+section.fourth-section {
   border: 1px red solid;
 }
 
-.thesis h2 {
+.fourth-section h2 {
   text-align: center;
   padding-bottom: 2rem;
 }
 
-.thesis video {
+.fourth-section .content {
+  display: flex;
+}
+
+.fourth-section .second-col {
+  margin-left: 1.5rem;
+}
+
+.fourth-section video {
   width: 100%;
   height: auto;
   display: block;
   padding-bottom: 1.5rem;
 }
 
-.thesis .text-wrap h3{
+.fourth-section .text-wrap h3{
   padding-bottom: 1rem;
 }
 
-/* .image-and-text-box img {
-  width: 35%;
-  padding: 1rem;
-} */
-
-/* thesis section - for screen width of 520px or smaller: */
+/* Fourth section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
-  .thesis .desktop {
+  section.fourth-section {
+    padding-left: 0;
+  }
+
+  .fourth-section .desktop {
     display: none;
   }
 
-  .thesis .mobile {
+  .fourth-section .mobile {
     display: block;
   }
 
-  .thesis h2 {
+  .fourth-section h2 {
     padding-bottom: 1rem;
   }
 
-  .thesis .first {
+  .fourth-section .first-col {
     width: 100%;
   }
 }
 
-/* footer section */
+/* Footer */
 
 footer {
   width: auto;
@@ -465,7 +467,7 @@ footer span {
   padding-left: 1rem;
 }
 
-/* thesis section - for screen width of 520px or smaller: */
+/* Footer - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
   footer .desktop {
