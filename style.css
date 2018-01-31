@@ -15,7 +15,7 @@ h5 {
   font-size: .9rem;
 }
 
-/* header section  */
+/* Header */
 
 header {
   position: fixed;
@@ -29,21 +29,20 @@ header {
 }
 
 header .content {
-  width: 100%;
   margin: 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #4A4A4A;
   border: 1px blue solid;
 }
 
 header .desktop {
+  border: 2px red dotted;
+}
+
+.flex-between {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px red dotted;
 }
 
 nav {
