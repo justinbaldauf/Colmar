@@ -94,10 +94,6 @@ header .mobile {
     padding-top: .25rem;
     border: 1px red dotted;
   }
-
-  header .mobile a {
-    padding-left: 0;
-  }
 }
 
 /* main section  */
