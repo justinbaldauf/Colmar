@@ -43,13 +43,14 @@ header .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px red dotted;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px black dotted;
+  border: 1px red dotted;
 }
 
 nav a {
@@ -85,20 +86,17 @@ header .mobile {
     padding-right: 0;
   }
 
-  /* .mobile must be displayed because the default is display: none */
   header .mobile {
-    display: block;
-    width: 100%;
-    margin-left: 4rem;
-    padding-top: .25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 6.5rem;
+    padding-top: .25rem;
+    border: 1px red dotted;
   }
 
   header .mobile a {
     padding-left: 0;
-    /* vertical-align: bottom; */
   }
 }
 
@@ -110,7 +108,7 @@ main {
   background-color: #f2f2f2;
 }
 
-/* CSS selectors used across multiple sections of the page */
+/* CSS selectors used across multiple sections */
 
 section {
   width: auto;
