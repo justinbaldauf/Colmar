@@ -111,19 +111,34 @@ main {
   background-color: #f2f2f2;
 }
 
+/* CSS selectors used across multiple sections of the page */
+
 section {
-  width: auto;
-  padding: 2rem 1.5rem;
-  background-color: white;
-}
-
-.section {
-  width: auto;
+  width: 100%;
+  height: auto;
   padding: 2rem 1.5rem;
 }
 
-.landing-page {
-  background-color: Grey;
+.first-col {
+  width: 60%;
+  border: 2px red solid;
+}
+
+.second-col {
+  width: 40%;
+  border: 2px blue solid;
+}
+
+.flex-wrap-row {
+  display: flex;
+  border: 1px red dotted;
+}
+
+.flex-wrap-col {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px red dotted;
 }
 
 .image-and-text-box {
@@ -132,33 +147,27 @@ section {
   border: 1px black dotted;
 }
 
-.flex-wrap-col {
-  display: flex;
-  flex-direction: column;
-  border: 1px red dotted;
+.text-wrap {
+  width: auto;
+  padding-right: 2rem;
+  border: 1px black dotted;
 }
 
-.second-col {
-  width: 40%;
-  border: 2px red solid;
+/* landing page section */
+
+.landing-page {
+  background-color: Grey;
 }
 
-.landing-page .image-container {
-  width: 60%;
-  height: auto;
-  border: 2px blue solid;
-  }
-
-.landing-page img {
+.landing-page .first-col img {
   width: 100%;
   height: auto;
   display: block;
   }
 
 .landing-page .flex-wrap-col {
-  width: auto;
   margin-left: 2rem;
-  margin-right: 4rem;
+  margin-right: 10rem;
 }
 
 .landing-page h3 {
@@ -178,17 +187,24 @@ section {
   padding-bottom: .5rem;
 }
 
-/* main section - for screen width of 520px or smaller: */
+/* landing page section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
+
+section.landing-page {
+  padding: 0rem;
+}
 
 .landing-page {
   flex-direction: column;
   }
 
-.landing-page .flex-wrap-col {
-  width: auto;
-  margin: 2rem 1rem;
+.landing-page .first-col {
+  width: 100%;
   }
+
+.landing-page .flex-wrap-col {
+  margin: 2rem 1rem;
+}
 
 .landing-page h3 {
   padding-top: 2rem;
@@ -229,10 +245,10 @@ section {
   padding-bottom: 2rem;
 }
 
-.second-col {
+/* .second-col {
   width: 40%;
   border: 2px black solid;
-}
+} */
 
 .second-col .image-and-text-box img {
   width: 35%;
@@ -394,19 +410,6 @@ section .thesis {
   padding-bottom: 2rem;
 }
 
-.flex-wrap-row {
-  display: flex;
-  border: 2px red dotted;
-}
-
-.first {
-  width: 60%;
-}
-
-.second {
-  width: 40%;
-}
-
 .thesis video {
   width: 100%;
   height: auto;
@@ -414,22 +417,16 @@ section .thesis {
   padding-bottom: 1.5rem;
 }
 
-.text-wrap {
-  width: auto;
-  padding-right: 2rem;
-  border: 1px black dotted;
-}
-
 .thesis .text-wrap h3{
   padding-bottom: 1rem;
 }
 
-.image-and-text-box img {
+/* .image-and-text-box img {
   width: 35%;
   padding: 1rem;
-}
+} */
 
-/* main section - for screen width of 520px or smaller: */
+/* thesis section - for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
   .thesis .desktop {
@@ -446,5 +443,36 @@ section .thesis {
 
   .thesis .first {
     width: 100%;
+  }
+}
+
+/* footer section */
+
+footer {
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+  border: 1px red dotted;
+}
+
+footer span {
+  padding-left: 1rem;
+}
+
+/* thesis section - for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+  footer .desktop {
+    display: none;
+  }
+
+  footer {
+    padding: 1rem;
   }
 }
