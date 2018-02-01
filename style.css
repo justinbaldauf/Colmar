@@ -46,14 +46,14 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  border: 2px black solid;
+  /* border: 2px black solid; */
 }
 
 header .content {
   width: 100%;
   margin: 0 1.5rem;
   color: black;
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
 }
 
 .logo-and-text {
@@ -72,7 +72,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 /* note: padding is slightly higher than specification due to my choice of font */
@@ -150,23 +150,24 @@ section {
 
 .first-col {
   width: 60%;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 .second-col {
   width: 40%;
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
 }
 
 .flex-wrap-row {
   display: flex;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
 
 .image-and-text-box {
+  width: auto;
   display: flex;
   align-items: center;
-  border: 1px black dotted;
+  /* border: 1px black dotted; */
 }
 
 .text-wrap {
@@ -174,7 +175,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .standard-image-format {
@@ -201,7 +202,7 @@ section {
 }
 
 .first-section .second-col {
-  margin-left: 3.25rem;
+  margin-left: 2rem;
 }
 
 .first-section .text-wrap {
@@ -276,12 +277,16 @@ section.first-section {
 .second-section {
   display: flex;
   background-color: white;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 .second-section .first-col, .second-section .second-col {
   display: flex;
   flex-direction: column;
+}
+
+.second-section .second-col {
+  margin-left: 2rem;
 }
 
 .second-section .first-col img {
@@ -301,10 +306,6 @@ section.first-section {
 .second-section .first-col h5{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-}
-
-.second-section .second-col {
-  margin-left: 1.5rem;
 }
 
 .second-section .second-col h5 {
@@ -388,7 +389,7 @@ section.first-section {
   padding-left: 4.5rem;
   padding-right: 4.5rem;
   background-color: hsl(0, 0%, 94%);
-  border: 2px black solid;
+  /* border: 2px black solid; */
 }
 
 .third-section h2 {
@@ -399,7 +400,7 @@ section.first-section {
   width: auto;
   display: flex;
   justify-content: space-between;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .first.row-of-boxes {
@@ -415,12 +416,11 @@ section.first-section {
 .third-section .text-wrap {
   background-color: white;
   width: auto;
-  height: 8.5rem;
-  border: 1px black dashed;
+  height: 9.5rem;
   margin-right: 0;
   padding-left: 1rem;
   padding-top: 1rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
   padding-bottom: 1.5rem;
 }
 
@@ -429,14 +429,15 @@ section.first-section {
 }
 
 .vertical-image-and-text-box h5 {
-  padding-bottom: .75rem;
-  line-height: 1.4;
+  /* font-size: .9rem; */
+  padding-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .third-section .mobile {
   display: none;
   width: 100%;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
 
 .third-section .mobile .container {
@@ -480,13 +481,15 @@ section.first-section {
 
 /* Fourth section ("Thesis") */
 
-section.fourth-section {
-  border: 1px red solid;
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fourth-section h2 {
-  text-align: center;
   padding-bottom: 2rem;
+  padding-right: 1.5rem;
 }
 
 .fourth-section .content {
@@ -545,8 +548,8 @@ footer {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
-  border: 1px red dotted;
+  padding: 2.5rem 1.5rem;
+  /* border: 1px red dotted; */
 }
 
 footer span {
