@@ -1,18 +1,35 @@
 html {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
+/* h1, h2, h3, h5 {
+  color:
+} */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 30%);
+}
+
+
 h2 {
   font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 30%);
 }
 
 h3 {
   font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 30%);
 }
 
 h5 {
   font-size: .9rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 30%);
 }
 
 /* Header */
@@ -94,7 +111,7 @@ header .mobile {
 main {
   top: 4rem; /* offset for fixed header. */
   position: relative;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 
 /* CSS selectors used across multiple sections */
@@ -152,7 +169,7 @@ section {
 /* first section (landing page) */
 
 .first-section {
-  background-color: Grey;
+  background-color: hsl(0, 0%, 82%);
 }
 
 .first-section .second-col {
@@ -297,7 +314,7 @@ section.first-section {
   align-items: center;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
-  background-color: LightGrey;
+  background-color: hsl(0, 0%, 93%);
   border: 2px black solid;
 }
 
