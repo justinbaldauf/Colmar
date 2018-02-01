@@ -100,6 +100,7 @@ header .desktop nav a {
   letter-spacing: .05rem;
   color: hsl(0, 0%, 40%);}
 
+/* same color as Read button below */
 header nav a:hover {
   color: hsl(210, 100%, 50%);
 }
@@ -130,7 +131,7 @@ header .mobile {
   }
 }
 
-/* main section  */
+/* Main section  */
 
 main {
   top: 4rem; /* offset for fixed header. */
@@ -193,18 +194,18 @@ section {
   line-height: 1.5;
 }
 
-/* first section (landing page) */
+/* First section (landing page) */
 
 .first-section {
   background-color: hsl(0, 0%, 84%);
 }
 
 .first-section .second-col {
-  margin-left: 2.5rem;
+  margin-left: 3.25rem;
 }
 
 .first-section .text-wrap {
-  margin-right: 13rem;
+  margin-right: 12rem;
 }
 
 .first-section h3 {
@@ -216,11 +217,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 4.5rem;
+  border-radius: .75rem;
   background-color: hsl(0, 0%, 30%);
 }
 
 .button:hover {
-  background-color: hsl(210, 100%, 50%);
+  background-color: hsl(210, 60%, 60%);
 }
 
 .button span {
@@ -230,7 +233,8 @@ section {
   font-weight: 600;
 }
 
-/* first section - for screen width of 520px or smaller: */
+/* First section - for screen width of 520px or smaller: */
+
 @media only screen and (max-width: 520px) {
 
 section.first-section {
@@ -325,6 +329,7 @@ section.first-section {
 }
 
 /* Second section - for screen width of 520px or smaller: */
+
 @media only screen and (max-width: 520px) {
 
 .second-section .desktop {
@@ -444,6 +449,7 @@ section.first-section {
 }
 
 /* Third section - for screen width of 520px or smaller: */
+
 @media only screen and (max-width: 520px) {
 
   .third-section {
@@ -503,6 +509,7 @@ section.fourth-section {
 }
 
 /* Fourth section - for screen width of 520px or smaller: */
+
 @media only screen and (max-width: 520px) {
 
   section.fourth-section {
@@ -546,6 +553,7 @@ footer span {
 }
 
 /* Footer - for screen width of 520px or smaller: */
+
 @media only screen and (max-width: 520px) {
 
   footer .desktop {
