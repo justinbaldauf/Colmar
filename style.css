@@ -214,10 +214,10 @@ section {
 }
 
 .button {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 4.5rem;
   border-radius: .75rem;
   background-color: hsl(0, 0%, 30%);
 }
@@ -253,8 +253,10 @@ section.first-section {
   margin-left: 0;
   }
 
-.first-section .text-wrap {
+.first-section .second-col .text-wrap {
   margin: 2rem 1rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .first-section h3 {
@@ -263,6 +265,8 @@ section.first-section {
   }
 
 .button {
+  width: auto;
+  margin: 0 5rem;
   background-color: hsl(0, 0%, 55%);
   }
 }
@@ -541,10 +545,7 @@ footer {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 3rem;
+  padding: 2rem 1.5rem;
   border: 1px red dotted;
 }
 
@@ -562,5 +563,11 @@ footer span {
 
   footer {
     padding: 1rem;
+    justify-content: center;
   }
+
+  footer span {
+    font-size: .75rem;
+  }
+
 }
