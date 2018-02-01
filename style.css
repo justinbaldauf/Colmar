@@ -6,6 +6,7 @@ html {
 h1 {
   font-size: 2.25rem;
   font-weight: 800;
+  line-height: 1.3;
   color: hsl(0, 0%, 30%);
 }
 
@@ -19,13 +20,20 @@ h2 {
 h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: hsl(0, 0%, 30%);
+  line-height: 1.5;
+  color: hsl(0, 0%, 35%);
 }
 
 h5 {
-  font-size: .9rem;
-  font-weight: 400;
-  color: hsl(0, 0%, 30%);
+  font-weight: 300;
+  line-height: 1.2;
+  color: hsl(0, 0%, 40%);
+}
+
+span {
+  font-weight: 300;
+  line-height: 1.2;
+  color: hsl(0, 0%, 40%);
 }
 
 /* Header */
@@ -67,13 +75,30 @@ nav {
   border: 1px red solid;
 }
 
+/* note: padding is slightly higher than specification due to my choice of font */
 nav a {
-  padding-left: 1rem;
+  padding-left: 1.8rem;
 }
 
 header .desktop img.logo {
   height: 3rem;
   padding-right: .3rem;
+}
+
+header .logo-and-text span {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 70%);
+}
+
+#first {
+  color: hsl(0, 0%, 30%);
+}
+
+header .desktop nav a {
+  font-weight: 500;
+  letter-spacing: .05rem;
+  color: hsl(0, 0%, 40%);
 }
 
 header .mobile {
@@ -146,7 +171,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
-  border: 1px red dotted;
+  border: 1px red solid;
 }
 
 .standard-image-format {
@@ -173,15 +198,15 @@ section {
 }
 
 .first-section .text-wrap {
-  margin-right: 11rem;
+  margin-right: 13rem;
 }
 
 .first-section h3 {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .button {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,8 +214,10 @@ section {
 }
 
 .button span {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  color: white;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-weight: 600;
 }
 
 /* first section - for screen width of 520px or smaller: */
@@ -239,18 +266,34 @@ section.first-section {
   padding-bottom: 2rem;
 }
 
+.second-section .first-col span {
+  font-size: .75rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 40%);
+}
+
 .second-section .first-col .text-wrap {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .second-section .first-col h5{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .second-section .second-col {
   margin-left: 1.5rem;
 }
+
+.second-section .second-col h5 {
+  padding: .75rem 0;
+}
+
+.second-section .second-col span {
+  color: hsl(210, 100%, 56%);
+}
+
 
 #orientation {
   padding-top: 0;
