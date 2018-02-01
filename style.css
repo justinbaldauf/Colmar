@@ -98,7 +98,10 @@ header .logo-and-text span {
 header .desktop nav a {
   font-weight: 500;
   letter-spacing: .05rem;
-  color: hsl(0, 0%, 40%);
+  color: hsl(0, 0%, 40%);}
+
+header nav a:hover {
+  color: hsl(210, 100%, 50%);
 }
 
 header .mobile {
@@ -132,7 +135,6 @@ header .mobile {
 main {
   top: 4rem; /* offset for fixed header. */
   position: relative;
-  /* background-color: #f2f2f2; */
 }
 
 /* CSS selectors used across multiple sections */
@@ -187,10 +189,14 @@ section {
   padding: 1rem;
 }
 
+.quote {
+  line-height: 1.5;
+}
+
 /* first section (landing page) */
 
 .first-section {
-  background-color: hsl(0, 0%, 82%);
+  background-color: hsl(0, 0%, 84%);
 }
 
 .first-section .second-col {
@@ -211,6 +217,10 @@ section {
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 30%);
+}
+
+.button:hover {
+  background-color: hsl(210, 100%, 50%);
 }
 
 .button span {
@@ -247,6 +257,10 @@ section.first-section {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   }
+
+.button {
+  background-color: hsl(0, 0%, 50%);
+  }
 }
 
 /* Second section ("keep practicing") */
@@ -279,7 +293,6 @@ section.first-section {
 .second-section .first-col h5{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  line-height: 1.5;
 }
 
 .second-section .second-col {
@@ -291,9 +304,17 @@ section.first-section {
 }
 
 .second-section .second-col span {
-  color: hsl(210, 100%, 56%);
+  color: hsl(210, 100%, 50%);
 }
 
+/* note: hover changes only the hue */
+.second-section .second-col span:hover {
+  color: hsl(354, 100%, 50%);
+}
+
+.second-section .second-col .image-and-text-box:nth-child(3n+0) {
+  background-color: hsl(0, 0%, 84%);
+}
 
 #orientation {
   padding-top: 0;
@@ -336,6 +357,10 @@ section.first-section {
   padding: 2rem 0;
   }
 
+.second-section .second-col .image-and-text-box:nth-child(3n+0) {
+    background-color: white;
+  }
+
 #orientation {
   padding-top: 0;
   }
@@ -353,7 +378,7 @@ section.first-section {
   align-items: center;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
-  background-color: hsl(0, 0%, 93%);
+  background-color: hsl(0, 0%, 94%);
   border: 2px black solid;
 }
 
@@ -381,7 +406,7 @@ section.first-section {
 .third-section .text-wrap {
   background-color: white;
   width: auto;
-  height: 6.75rem;
+  height: 8.5rem;
   border: 1px black dashed;
   margin-right: 0;
   padding-left: 1rem;
@@ -395,7 +420,8 @@ section.first-section {
 }
 
 .vertical-image-and-text-box h5 {
-  padding-top: .5rem;
+  padding-bottom: .75rem;
+  line-height: 1.4;
 }
 
 .third-section .mobile {
@@ -408,7 +434,13 @@ section.first-section {
   width: auto;
   padding: 1rem;
   margin-bottom: .5rem;
-  background-color: LightGrey;
+  background-color: hsl(0, 0%, 84%);
+}
+
+.third-section .mobile a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 30%);
 }
 
 /* Third section - for screen width of 520px or smaller: */
@@ -453,6 +485,10 @@ section.fourth-section {
 
 .fourth-section .second-col {
   margin-left: 1.5rem;
+}
+
+.fourth-section .second-col .image-and-text-box:first-child {
+  background-color: hsl(0, 0%, 84%);
 }
 
 .fourth-section video {
