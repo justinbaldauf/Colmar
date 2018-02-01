@@ -3,13 +3,9 @@ html {
   font-size: 16px;
 }
 
-/* h1, h2, h3, h5 {
-  color:
-} */
-
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 800;
   color: hsl(0, 0%, 30%);
 }
 
@@ -28,7 +24,7 @@ h3 {
 
 h5 {
   font-size: .9rem;
-  font-weight: 300;
+  font-weight: 400;
   color: hsl(0, 0%, 30%);
 }
 
@@ -173,11 +169,11 @@ section {
 }
 
 .first-section .second-col {
-  margin-left: 1.5rem;
+  margin-left: 2.5rem;
 }
 
 .first-section .text-wrap {
-  margin-right: 10rem;
+  margin-right: 11rem;
 }
 
 .first-section h3 {
@@ -185,11 +181,11 @@ section {
 }
 
 .button {
-  background-color: DarkGrey;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(0, 0%, 30%);
 }
 
 .button span {
